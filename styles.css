@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+	--primary-bg: hsl(30, 38%, 92%);
+	--secodary-bg: hsl(0, 0%, 100%);
+	--accent: hsl(158, 36%, 37%);
+	--dark-txt: hsl(212, 21%, 14%);
+	--light-txt: hsl(228, 12%, 48%);
+	--para: 14px;
+}
+
+/* utilities */
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* resets */
+
+html,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+button,
+span {
+	display: block;
+}
+
+/* styles */
+
+.sale-price,
+.product-name {
+	font-family: Fraunces;
+	font-size: 55px;
+}
+
+body {
+	background-color: var(--primary-bg);
+	font-family: Montserrat;
+	font-size: var(--para);
+	color: var(--light-txt);
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+}
+.product-card__img,
+.product-card__info {
+	width: 50%;
+}
+
+.product-card {
+	width: 900px;
+}
+
+.product-card__img {
+	background-image: url(/images/image-product-desktop.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 40rem;
+	border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.product-card__info {
+	padding: 2rem;
+	align-self: stretch;
+	background-color: var(--secodary-bg);
+	border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.title {
+	margin: 0 0 1.5rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-weight: 500;
+}
+
+.product-name {
+	margin: 0 0 2rem 0;
+	color: var(--dark-txt);
+}
+
+.product-info {
+	padding: 0 1rem 2rem 1rem;
+	line-height: 2;
+}
+.price-container {
+	justify-content: space-between;
+	margin: 0 0 2rem 0;
+}
+
+.reg-price {
+	margin: 0 2.5rem 0 0;
+	font-size: 1.5rem;
+	text-decoration: line-through;
+}
+
+.sale-price {
+	color: var(--accent);
+}
+
+.cta {
+	width: 90%;
+	padding: 1rem;
+	margin: 0 auto;
+	border: none;
+	border-radius: 0.2rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	font-family: Montserrat;
+	letter-spacing: 0.2rem;
+	background-color: var(--accent);
+	color: var(--secodary-bg);
+}
